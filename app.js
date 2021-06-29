@@ -29,7 +29,15 @@ car.carBreak(200);
 car.carSpeedUp(70);
 car.carRotate(true);
 
-console.log(JSON.stringify(car));
+for (var property in car.additionalSpecs) {
+  console.log(property + ": " + car.additionalSpecs[property]);
+}
 
 console.log(car.model, "is quite expensive but due to it being", car.power, "eco friendly.");
+
+console.log(JSON.stringify(car));
+
+// bonus
+
+console.log(Object.getOwnPropertyNames(car));
 
