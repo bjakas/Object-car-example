@@ -32,6 +32,11 @@ car.carRotate(true);
 for (var property in car.additionalSpecs) {
   console.log(property + ": " + car.additionalSpecs[property]);
 }
+// OR from MDN - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+
+for (var property in car.additionalSpecs) {
+  console.log(`${property}: ${car.additionalSpecs[property]}`);
+}
 
 console.log(car.model, "is quite expensive but due to it being", car.power, "eco friendly.");
 
